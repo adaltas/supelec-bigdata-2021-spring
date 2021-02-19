@@ -1,4 +1,9 @@
 ---
+- name: Install Java
+  yum:
+    name: java-1.8.0-openjdk-devel
+    state: latest
+
 - name: Download NiFi 1.9.2 binaries
   get_url:
     url: https://archive.apache.org/dist/nifi/1.9.2/nifi-1.9.2-bin.tar.gz
