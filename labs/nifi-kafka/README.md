@@ -50,7 +50,7 @@ Before you can start the lab, you have to:
    ```
 6. Go to the `nifi-kafka` directory:
    ```
-   cd supelec-bigdata-2021-spring/nifi-kafka
+   cd supelec-bigdata-2021-spring/labs/nifi-kafka
    ```
 
 ## Lab
