@@ -1,0 +1,11 @@
+---
+- hosts: nifi_server
+  # Run commands as root
+  become: true
+  # Roles to be executed on these hosts
+  roles:
+  - role: nifi
+    tags: nifi
+
+  - role: kafka
+    tags: kafka

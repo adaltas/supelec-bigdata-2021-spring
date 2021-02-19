@@ -1,0 +1,12 @@
+---
+# - name: Download Kafka 2.1.0 binaries
+#   COMPLETE HERE
+
+# - name: Unpack Kafka binaries
+#   COMPLETE HERE
+
+# - name: Start Zookeeper
+#   COMPLETE HERE
+
+# - name: Start a Kafka broker
+#   COMPLETE HERE
