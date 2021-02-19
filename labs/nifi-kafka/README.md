@@ -46,7 +46,7 @@ Before you can start the lab, you have to:
 
 5. Clone the lab repository to your computer:
    ```
-   git clone https://github.com/adaltas/ece-hadoop.git
+   git clone https://github.com/adaltas/supelec-bigdata-2021-spring.git
    ```
 6. Go to the `nifi-kafka` directory:
    ```
