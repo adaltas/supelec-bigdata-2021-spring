@@ -11,11 +11,11 @@
     remote_src: yes
 
 - name: Start Zookeeper
-  command:
-    cmd: bin/zookeeper-server-start.sh config/zookeeper.properties
+  shell:
+    cmd: bin/zookeeper-server-start.sh config/zookeeper.properties > /dev/null 2>&1 &
     chdir: /usr/kafka_2.11-2.1.0
 
 - name: Start a Kafka broker
-  command:
-    cmd: bin/kafka-server-start.sh config/server.properties
+  shell:
+    cmd: bin/kafka-server-start.sh config/server.properties > /dev/null 2>&1 &
     chdir: /usr/kafka_2.11-2.1.0
