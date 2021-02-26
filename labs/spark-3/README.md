@@ -22,15 +22,15 @@ To stream the NY datasets:
 
 - Go to this directory:
   ```
-  cd ece-spark-2020-fall/labs/lab3
+  cd supelec-bigdata-2021-spring/labs/spark-3
   ```
 - Create a checkpoint directory for Spark Streaming in your HDFS personal folder:
   ```sh
-  hdfs dfs -mkdir -p "/education/ece/big-data/2020/fall/bda/gr1/$USER/spark-streaming/checkpoint"
+  hdfs dfs -mkdir -p "/education/cs_2021_spring_1/$USER/spark-streaming/checkpoint"
   ```
 - Run the `stream_taxi_data_socket.py` script. The script has 3 parameters: the server name to use to stream the data, the port on which to open the socket, the dataset to stream (can be either `fares` or `rides`)
   ```sh
   PORT=11111
-  hdfs dfs -rm -r -f "/education/ece/big-data/2020/fall/bda/gr1/$USER/spark-streaming/checkpoint/*"
+  hdfs dfs -rm -r -f "/education/cs_2021_spring_1/$USER/spark-streaming/checkpoint/*"
   python3 stream_taxi_data_socket.py edge-1.au.adaltas.cloud "$PORT" fares
   ```
